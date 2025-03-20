@@ -7,10 +7,11 @@ interface BundleProps {
 
 function BundleCard({ bundle }: BundleProps) {
   return (
-  <Card title={bundle.name}>
-    <p>Amount: {bundle.amount}</p>
-    <p>Price: {bundle.price}</p>
-  </Card>
+    <Card title={bundle.id} type="inner">
+      <p>Name: {bundle.name}</p>
+      <p>Amount: {bundle.amount}</p>
+      <p>Price: {bundle.price}</p>
+    </Card>
   );
 }
 
