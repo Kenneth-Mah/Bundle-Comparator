@@ -1,0 +1,22 @@
+{
+  "games": [
+    {
+      "id": "marvel-rivals",
+      "name": "Marvel Rivals",
+      "bundles": [
+        {
+          "id": "100-lattice-bundle",
+          "name": "100 Lattice Bundle",
+          "amount": 100,
+          "price": 0.99
+        },
+        {
+          "id": "500-lattice-bundle",
+          "name": "500 Lattice Bundle",
+          "amount": 500,
+          "price": 4.99
+        }
+      ]
+    }
+  ]
+}
