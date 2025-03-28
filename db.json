@@ -1,34 +1,17 @@
 {
   "games": [
     {
-      "id": "marvel-rivals",
-      "name": "Marvel Rivals",
-      "bundles": [
-        {
-          "id": "100-lattice-bundle",
-          "name": "100 Lattice Bundle",
-          "amount": "100",
-          "price": "0.99"
-        },
-        {
-          "id": "500-lattice-bundle",
-          "name": "500 Lattice Bundle",
-          "amount": "500",
-          "price": "4.99"
-        },
-        {
-          "id": "1000-lattice-bundle",
-          "name": "1000 Lattice Bundle",
-          "amount": "1000",
-          "price": "9.99"
-        },
-        {
-          "id": "2180-lattice-bundle",
-          "name": "2180 Lattice Bundle",
-          "amount": "2180",
-          "price": "19.99"
-        }
-      ]
+      "id": "f2a6",
+      "name": "Marvel Rivals"
+    }
+  ],
+  "bundles": [
+    {
+      "id": "6638",
+      "gameId": "f2a6",
+      "name": "100 Lattice Bundle",
+      "amount": "100",
+      "price": "0.99"
     }
   ]
 }

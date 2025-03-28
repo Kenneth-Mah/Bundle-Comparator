@@ -1,16 +1,17 @@
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { Bundle, Game } from "../types";
-import { addBundle } from "../api/bundlesApi";
+import { useMutation, useQuery } from "@tanstack/react-query";
+import { addBundle, getBundlesByGameId } from "../api/bundlesApi";
 
 export const useAddBundle = () => {
-  const queryClient = useQueryClient();
-
-  return useMutation<Game, unknown, { gameId: string; data: Bundle }>({
+  return useMutation({
     mutationKey: ["useAddBundle"],
     mutationFn: addBundle,
-    onSuccess: () => {
-      console.log("Mutation succeeded, invalidating games query...");
-      queryClient.invalidateQueries({ queryKey: ["useFetchGames"] }); // Refresh games after the mutation
-    },
+  });
+};
+
+export const useGetBundlesByGameId = (gameId: string) => {
+  return useQuery({
+    queryKey: ["useGetBundlesByGameId", gameId],
+    queryFn: () => getBundlesByGameId(gameId),
+    enabled: !!gameId,
   });
 };

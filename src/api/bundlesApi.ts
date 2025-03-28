@@ -1,20 +1,12 @@
-import { Bundle, Game } from "../types";
+import { Bundle, CreateBundleRequest, Game } from "../types";
 import apiClient from "./apiClient";
 
-export const addBundle = async ({
-  gameId,
-  data,
-}: {
-  gameId: string;
-  data: Bundle;
-}): Promise<Game> => {
-  const existingGame = await apiClient.get(`/games/${gameId}`);
+export const addBundle = async (bundle: CreateBundleRequest): Promise<Game> => {
+  const response = await apiClient.post("/bundles", bundle);
+  return response.data;
+};
 
-  const updatedBundles = [...existingGame.data.bundles, data];
-
-  const response = await apiClient.patch(`/games/${gameId}`, {
-    bundles: updatedBundles,
-  });
-
+export const getBundlesByGameId = async (gameId: string): Promise<Bundle[]> => {
+  const response = await apiClient.get(`/bundles?gameId=${gameId}`);
   return response.data;
 };
