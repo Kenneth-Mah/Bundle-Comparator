@@ -4,10 +4,6 @@
 
 `npm install -g json-server`
 
-## Start JSON Server
+## Start Application
 
-`json-server --watch db.json --port 5000`
-
-### Running Scripts on Powershell
-
-`Set-ExecutionPolicy RemoteSigned –Scope Process`
+`npm run start`
