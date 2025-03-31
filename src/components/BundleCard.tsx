@@ -10,6 +10,7 @@ function BundleCard({ bundle }: BundleProps) {
     <Card title={bundle.name} type="inner">
       <p>Amount: {bundle.amount}</p>
       <p>Price: {bundle.price}</p>
+      <p>Value per Dollar: {bundle.valuePerDollar}</p>
     </Card>
   );
 }

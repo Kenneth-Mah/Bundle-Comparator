@@ -38,7 +38,9 @@ function ViewGame() {
         }
       >
         {bundles.length > 0 ? (
-          bundles.map((bundle) => BundleCard({ bundle }))
+          [...bundles]
+            .sort((a, b) => b.valuePerDollar - a.valuePerDollar)
+            .map((bundle) => <BundleCard key={bundle.id} bundle={bundle} />)
         ) : (
           <Result
             status="info"

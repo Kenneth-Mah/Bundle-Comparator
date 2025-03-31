@@ -4,9 +4,10 @@ export interface Bundle {
   name: string;
   amount: number;
   price: number;
+  valuePerDollar: number;
 }
 
-export type CreateBundleRequest = Omit<Bundle, "id">;
+export type CreateBundleRequest = Omit<Bundle, "id | valuePerDollar">;
 
 export interface Game {
   id: string;

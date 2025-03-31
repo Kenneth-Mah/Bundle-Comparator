@@ -7,11 +7,52 @@
   ],
   "bundles": [
     {
-      "id": "6638",
+      "id": "f17d",
       "gameId": "f2a6",
       "name": "100 Lattice Bundle",
       "amount": "100",
-      "price": "0.99"
+      "price": "0.99",
+      "valuePerDollar": 101.01010101010101
+    },
+    {
+      "id": "ad78",
+      "gameId": "f2a6",
+      "name": "5680 Lattice Bundle",
+      "amount": "5680",
+      "price": "49.99",
+      "valuePerDollar": 113.62272454490898
+    },
+    {
+      "id": "df1c",
+      "gameId": "f2a6",
+      "name": "500 Lattice Bundle",
+      "amount": "500",
+      "price": "4.99",
+      "valuePerDollar": 100.20040080160321
+    },
+    {
+      "id": "e137",
+      "gameId": "f2a6",
+      "name": "1000 Lattice Bundle",
+      "amount": "1000",
+      "price": "9.99",
+      "valuePerDollar": 100.1001001001001
+    },
+    {
+      "id": "f2a6",
+      "gameId": "f2a6",
+      "name": "2180 Lattice Bundle",
+      "amount": "2180",
+      "price": "19.99",
+      "valuePerDollar": 109.05452726363183
+    },
+    {
+      "id": "3025",
+      "gameId": "f2a6",
+      "name": "11680 Lattice Bundle",
+      "amount": "11680",
+      "price": "99.99",
+      "valuePerDollar": 116.81168116811682
     }
   ]
 }

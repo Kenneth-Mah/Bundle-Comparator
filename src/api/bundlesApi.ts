@@ -2,6 +2,7 @@ import { Bundle, CreateBundleRequest, Game } from "../types";
 import apiClient from "./apiClient";
 
 export const addBundle = async (bundle: CreateBundleRequest): Promise<Game> => {
+  bundle.valuePerDollar = bundle.amount / bundle.price;
   const response = await apiClient.post("/bundles", bundle);
   return response.data;
 };
