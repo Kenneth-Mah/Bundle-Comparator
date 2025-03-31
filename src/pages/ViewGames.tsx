@@ -4,7 +4,7 @@ import { useFetchGames } from "../hooks/gamesHooks";
 
 const { Title } = Typography;
 
-function Games() {
+function ViewGames() {
   const navigate = useNavigate();
   const { data: games, isLoading, isError } = useFetchGames();
 
@@ -49,4 +49,4 @@ function Games() {
   );
 }
 
-export default Games;
+export default ViewGames;
